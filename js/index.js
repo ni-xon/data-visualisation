@@ -5,3 +5,10 @@ vegaEmbed("#choropleth-map", spec2)
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   })
   .catch(console.error);
+
+  var spec3 = "data/pie_chart.vg.json";
+vegaEmbed("#pie-chart", spec3)
+  .then(function (result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  })
+  .catch(console.error);

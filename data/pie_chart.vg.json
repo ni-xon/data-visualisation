@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A simple pie chart with labels.",
+  "width": 400,
+  "height": 300,
+  "background": "transparent",
+  "config": {
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "data": {
+    "values": [
+      { "category": "Military", "value": 333 },
+      { "category": "Civillian", "value": 231 }
+    ]
+  },
+  "encoding": {
+    "theta": { "field": "value", "type": "quantitative", "stack": true },
+    "color": { "field": "category", "type": "nominal", "legend": null }
+  },
+  "layer": [
+    {
+      "mark": { "type": "arc", "outerRadius": 80 }
+    },
+    {
+      "mark": { "type": "text", "radius": 110 },
+      "encoding": {
+        "text": { "field": "category", "type": "nominal" }
+      }
+    }
+  ]
+}

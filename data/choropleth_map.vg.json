@@ -4,6 +4,11 @@
   "width": 1000,
   "height": 600,
   "background": "black",
+  "config": {
+    "view": {
+      "stroke": "transparent"
+    }
+  },
   "data": {
     "url": "https://raw.githubusercontent.com/ni-xon/data-visualisation/master/data/world.topojson",
     "format": {
