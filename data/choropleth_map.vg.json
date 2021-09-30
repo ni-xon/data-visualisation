@@ -1,0 +1,44 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Global Distribution of Astronauts before 2020",
+  "width": 1000,
+  "height": 600,
+  "data": {
+    "url": "https://raw.githubusercontent.com/ni-xon/fit3179-homework9/master/data/world.topojson",
+    "format": {
+      "type": "topojson",
+      "feature": "custom.geo"
+    }
+  },
+  "transform": [
+    {
+      "lookup": "properties.name",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/ni-xon/fit3179-homework9/master/data-cleaning/nationalities.csv"
+        },
+        "key": "country",
+        "fields": ["count"]
+      }
+    }
+  ],
+  "projection": {
+    "type": "equirectangular"
+  },
+  "mark": {
+    "type": "geoshape",
+    "stroke": "white"
+  },
+  "encoding": {
+    "color": {
+      "field": "count",
+      "type": "quantitative",
+      "scale": { "scheme": "greys", "type": "symlog" }
+    },
+
+    "tooltip": [
+      { "field": "properties.name", "type": "nominal", "title": "country" },
+      { "field": "count", "type": "quantitative" }
+    ]
+  }
+}
