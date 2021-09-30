@@ -3,8 +3,9 @@
   "title": "Global Distribution of Astronauts before 2020",
   "width": 1000,
   "height": 600,
+  "background": "transparent",
   "data": {
-    "url": "https://raw.githubusercontent.com/ni-xon/fit3179-homework9/master/data/world.topojson",
+    "url": "https://raw.githubusercontent.com/ni-xon/data-visualisation/master/data/world.topojson",
     "format": {
       "type": "topojson",
       "feature": "custom.geo"
@@ -15,7 +16,7 @@
       "lookup": "properties.name",
       "from": {
         "data": {
-          "url": "https://raw.githubusercontent.com/ni-xon/fit3179-homework9/master/data-cleaning/nationalities.csv"
+          "url": "https://raw.githubusercontent.com/ni-xon/data-visualisation/master/data-cleaning/nationalities.csv"
         },
         "key": "country",
         "fields": ["count"]
@@ -27,13 +28,13 @@
   },
   "mark": {
     "type": "geoshape",
-    "stroke": "white"
+    "stroke": "black"
   },
   "encoding": {
     "color": {
       "field": "count",
       "type": "quantitative",
-      "scale": { "scheme": "greys", "type": "symlog" }
+      "scale": { "scheme": "greys", "type": "symlog", "reverse": true }
     },
 
     "tooltip": [
