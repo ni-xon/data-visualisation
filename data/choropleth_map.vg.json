@@ -3,7 +3,7 @@
   "title": "Global Distribution of Astronauts before 2020",
   "width": 1000,
   "height": 600,
-  "background": "transparent",
+  "background": "black",
   "data": {
     "url": "https://raw.githubusercontent.com/ni-xon/data-visualisation/master/data/world.topojson",
     "format": {
