@@ -39,7 +39,7 @@
     "color": {
       "field": "count",
       "type": "quantitative",
-      "scale": { "scheme": "greys", "type": "symlog", "reverse": true }
+      "scale": { "scheme": "reds", "type": "symlog", "reverse": false }
     },
 
     "tooltip": [
