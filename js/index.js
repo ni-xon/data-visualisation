@@ -6,8 +6,15 @@ vegaEmbed("#choropleth-map", spec2)
   })
   .catch(console.error);
 
-  var spec3 = "data/pie_chart.vg.json";
-vegaEmbed("#pie-chart", spec3)
+var spec3 = "data/isotype_grid_gender.vg.json";
+vegaEmbed("#isotype-grid-gender", spec3)
+  .then(function (result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  })
+  .catch(console.error);
+
+var spec4 = "data/isotype_grid_military.vg.json";
+vegaEmbed("#isotype-grid-military", spec4)
   .then(function (result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   })

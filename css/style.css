@@ -35,6 +35,29 @@ h1 {
   margin: 10px;
 }
 
+#isotype-grid-gender,
+#isotype-grid-military {
+  padding-right: 30px;
+}
+
+.first-row {
+  width: 80%;
+  display: flex;
+  gap: 20px;
+}
+
+.first-row .card {
+  display: flex;
+}
+
+.paragraph-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100px;
+}
+
 /* Starry Background */
 .background-container {
   position: fixed;
