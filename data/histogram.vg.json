@@ -3,6 +3,7 @@
   "description": "A bar chart with highlighting on hover and selecting on click. (Inspired by Tableau's interaction style.)",
   "width": 1000,
   "height": 400,
+  "background": "black",
   "data": {
     "url": "data-cleaning/unique_astronauts.csv"
   },
@@ -15,7 +16,7 @@
   ],
   "mark": {
     "type": "bar",
-    "fill": "black",
+    "fill": "white",
     "stroke": "black",
     "cursor": "pointer"
   },
@@ -26,10 +27,20 @@
       "title": "Age on First Mission",
       "axis": {
         "labelAngle": 0,
-        "labelColor": "black"
+        "labelColor": "white",
+        "titleColor": "white"
       }
     },
-    "y": { "aggregate": "count", "type": "quantitative", "title": "Count" },
+    "y": {
+      "aggregate": "count",
+      "type": "quantitative",
+      "title": "Count",
+      "axis": {
+        "labelAngle": 0,
+        "labelColor": "white",
+        "titleColor": "white"
+      }
+    },
     "tooltip": [
       {
         "aggregate": "count",

@@ -1,6 +1,11 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Global Distribution of Astronauts before 2020",
+  "title": {
+    "text": "Global distribution of Astronauts and their nationalilties before 2020",
+    "color": "white",
+    "anchor": "end",
+    "orient": "top"
+  },
   "width": 1000,
   "height": 600,
   "background": "black",
@@ -39,7 +44,7 @@
     "color": {
       "field": "count",
       "type": "quantitative",
-      "scale": { "scheme": "reds", "type": "symlog", "reverse": false }
+      "scale": { "scheme": "darkred", "type": "symlog", "reverse": false }
     },
 
     "tooltip": [
