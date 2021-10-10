@@ -1,0 +1,65 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A bar chart with highlighting on hover and selecting on click. (Inspired by Tableau's interaction style.)",
+  "width": 1000,
+  "height": 400,
+  "data": {
+    "url": "data-cleaning/unique_astronauts.csv"
+  },
+  "params": [
+    {
+      "name": "highlight",
+      "select": { "type": "point", "on": "mouseover" }
+    },
+    { "name": "select", "select": "point" }
+  ],
+  "mark": {
+    "type": "bar",
+    "fill": "black",
+    "stroke": "black",
+    "cursor": "pointer"
+  },
+  "encoding": {
+    "x": {
+      "field": "age_first_mission",
+      "type": "ordinal",
+      "title": "Age on First Mission",
+      "axis": {
+        "labelAngle": 0,
+        "labelColor": "black"
+      }
+    },
+    "y": { "aggregate": "count", "type": "quantitative", "title": "Count" },
+    "tooltip": [
+      {
+        "aggregate": "count",
+        "type": "quantitative",
+        "title": "Number of Astronauts"
+      }
+    ],
+    "fillOpacity": {
+      "condition": { "param": "select", "value": 1 },
+      "value": 0.3
+    },
+    "strokeWidth": {
+      "condition": [
+        {
+          "param": "select",
+          "empty": false,
+          "value": 2
+        },
+        {
+          "param": "highlight",
+          "empty": false,
+          "value": 1
+        }
+      ],
+      "value": 0
+    }
+  },
+  "config": {
+    "scale": {
+      "bandPaddingInner": 0.2
+    }
+  }
+}
