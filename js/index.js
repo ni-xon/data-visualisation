@@ -26,3 +26,10 @@ vegaEmbed("#histogram", spec5)
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   })
   .catch(console.error);
+
+var spec6 = "data/isotype_dot_plot.vg.json";
+vegaEmbed("#isotype-dot-plot", spec6)
+  .then(function (result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  })
+  .catch(console.error);

@@ -1,0 +1,85 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "config": { "view": { "stroke": "" } },
+  "width": 400,
+  "height": 350,
+  "background": "black",
+  "data": {
+    "values": [
+      { "name": "Ross, Jerry L.", "emoji": "rocket" },
+      { "name": "Ross, Jerry L.", "emoji": "rocket" },
+      { "name": "Ross, Jerry L.", "emoji": "rocket" },
+      { "name": "Ross, Jerry L.", "emoji": "rocket" },
+      { "name": "Ross, Jerry L.", "emoji": "rocket" },
+      { "name": "Ross, Jerry L.", "emoji": "rocket" },
+      { "name": "Ross, Jerry L.", "emoji": "rocket" },
+      { "name": "Chang-Diaz, Franklin R.", "emoji": "rocket" },
+      { "name": "Chang-Diaz, Franklin R.", "emoji": "rocket" },
+      { "name": "Chang-Diaz, Franklin R.", "emoji": "rocket" },
+      { "name": "Chang-Diaz, Franklin R.", "emoji": "rocket" },
+      { "name": "Chang-Diaz, Franklin R.", "emoji": "rocket" },
+      { "name": "Chang-Diaz, Franklin R.", "emoji": "rocket" },
+      { "name": "Chang-Diaz, Franklin R.", "emoji": "rocket" },
+      { "name": "Malenchenko, Yuri", "emoji": "rocket" },
+      { "name": "Malenchenko, Yuri", "emoji": "rocket" },
+      { "name": "Malenchenko, Yuri", "emoji": "rocket" },
+      { "name": "Malenchenko, Yuri", "emoji": "rocket" },
+      { "name": "Malenchenko, Yuri", "emoji": "rocket" },
+      { "name": "Malenchenko, Yuri", "emoji": "rocket" },
+      { "name": "Foale, C. Michael", "emoji": "rocket" },
+      { "name": "Foale, C. Michael", "emoji": "rocket" },
+      { "name": "Foale, C. Michael", "emoji": "rocket" },
+      { "name": "Foale, C. Michael", "emoji": "rocket" },
+      { "name": "Foale, C. Michael", "emoji": "rocket" },
+      { "name": "Foale, C. Michael", "emoji": "rocket" },
+      { "name": "Krikalev, Sergei", "emoji": "rocket" },
+      { "name": "Krikalev, Sergei", "emoji": "rocket" },
+      { "name": "Krikalev, Sergei", "emoji": "rocket" },
+      { "name": "Krikalev, Sergei", "emoji": "rocket" },
+      { "name": "Krikalev, Sergei", "emoji": "rocket" },
+      { "name": "Krikalev, Sergei", "emoji": "rocket" },
+      { "name": "Wetherbee, James D.", "emoji": "rocket" },
+      { "name": "Wetherbee, James D.", "emoji": "rocket" },
+      { "name": "Wetherbee, James D.", "emoji": "rocket" },
+      { "name": "Wetherbee, James D.", "emoji": "rocket" },
+      { "name": "Wetherbee, James D.", "emoji": "rocket" },
+      { "name": "Wetherbee, James D.", "emoji": "rocket" }
+    ]
+  },
+  "transform": [
+    {
+      "calculate": "{'rocket': '🚀'}[datum.emoji]",
+      "as": "emoji"
+    },
+    { "window": [{ "op": "rank", "as": "rank" }], "groupby": ["name", "emoji"] }
+  ],
+  "mark": { "type": "text", "baseline": "middle" },
+  "encoding": {
+    "x": {
+      "field": "rank",
+      "type": "ordinal",
+      "title": "",
+      "axis": {
+        "labelAngle": 0,
+        "labelColor": "white",
+        "titleColor": "white",
+        "ticks": false
+      }
+    },
+    "y": {
+      "field": "name",
+      "type": "nominal",
+      "sort": null,
+      "title": "",
+      "axis": {
+        "labelPadding": 10,
+        "labelAngle": 0,
+        "labelColor": "white",
+        "titleColor": "white",
+        "ticks": false
+      }
+    },
+    "text": { "field": "emoji", "type": "nominal" },
+    "size": { "value": 40 }
+  }
+}
