@@ -1,0 +1,80 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A bar chart with highlighting on hover and selecting on click. (Inspired by Tableau's interaction style.)",
+  "width": 400,
+  "height": 400,
+  "background": "black",
+  "data": {
+    "url": "data-cleaning/top10_eva_hrs.csv"
+  },
+  "params": [
+    {
+      "name": "highlight",
+      "select": { "type": "point", "on": "mouseover" }
+    },
+    { "name": "select", "select": "point" }
+  ],
+  "mark": {
+    "type": "bar",
+    "fill": "white",
+    "stroke": "black",
+    "cursor": "pointer"
+  },
+  "encoding": {
+    "x": {
+      "field": "total_eva_hrs",
+      "type": "quantitative",
+      "title": "Number of Extravehicular Hours",
+      "axis": {
+        "labelAngle": 0,
+        "labelColor": "white",
+        "titleColor": "white"
+      }
+    },
+    "y": {
+      "field": "name",
+      "type": "nominal",
+      "title": "",
+      "sort": {
+        "field": "total_eva_hrs",
+        "order": "descending"
+      },
+      "axis": {
+        "labelAngle": 0,
+        "labelColor": "white",
+        "titleColor": "white"
+      }
+    },
+    "tooltip": [
+      {
+        "field": "total_eva_hrs",
+        "type": "quantitative",
+        "title": "Number of EVA hours"
+      }
+    ],
+    "fillOpacity": {
+      "condition": { "param": "select", "value": 1 },
+      "value": 0.3
+    },
+    "strokeWidth": {
+      "condition": [
+        {
+          "param": "select",
+          "empty": false,
+          "value": 2
+        },
+        {
+          "param": "highlight",
+          "empty": false,
+          "value": 1
+        }
+      ],
+      "value": 0
+    }
+  },
+  "config": {
+    "scale": {
+      "bandPaddingInner": 0.2
+    }
+  }
+}

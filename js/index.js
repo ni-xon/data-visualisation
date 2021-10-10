@@ -33,3 +33,10 @@ vegaEmbed("#isotype-dot-plot", spec6)
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   })
   .catch(console.error);
+
+  var spec7 = "data/eva_hrs_bar_chart.vg.json";
+vegaEmbed("#eva-hrs-bar-chart", spec7)
+  .then(function (result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  })
+  .catch(console.error);
