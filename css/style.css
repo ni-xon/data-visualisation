@@ -77,6 +77,12 @@ h1 {
   gap: 30px;
 }
 
+.third-row {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
 /* Starry Background */
 .background-container {
   position: fixed;
