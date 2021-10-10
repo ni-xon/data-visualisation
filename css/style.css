@@ -83,6 +83,12 @@ h1 {
   gap: 40px;
 }
 
+.fourth-row {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+
 /* Starry Background */
 .background-container {
   position: fixed;
