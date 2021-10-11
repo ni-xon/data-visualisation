@@ -28,6 +28,12 @@ h1 {
   text-align: center;
 }
 
+img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+
 :root {
   --bg-color: rgb(0, 0, 0);
   --text-color: white;
@@ -50,6 +56,7 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-content: center;
   gap: 20px;
 }
 
@@ -69,6 +76,12 @@ h1 {
   justify-content: space-around;
   flex-wrap: wrap;
   width: 100px;
+}
+
+.age-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .second-row {
