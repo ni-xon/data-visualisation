@@ -31,10 +31,10 @@
     <!-- Main Content -->
     <main>
       <header><h1>Earth's Astronauts</h1></header>
-      <div class="row first-row">
+      <div class="section-column" id="first-section">
         <h1>Who are our astronauts?</h1>
-        <div class="cards-container">
-          <div class="card">
+        <div class="section-row">
+          <div class="section-row">
             <div class="paragraph-container">
               <p>89% of astronauts are male</p>
               <p>11% of astronauts are female</p>
@@ -42,7 +42,7 @@
             <div id="isotype-grid-gender"></div>
           </div>
 
-          <div class="card">
+          <div class="section-row">
             <div class="paragraph-container">
               <p>59% of astronauts are originally from the military</p>
               <p>41% of astronauts are originally civilians</p>
@@ -51,13 +51,13 @@
           </div>
         </div>
 
-        <div class="cards-container">
-          <div class="card">
+        <div class="section-row" id="first-male-female-container">
+          <div class="section-row">
             <p>The first male in space is Yuri Gagarin</p>
             <img src="./images/yuri_bw.jpg" alt="./images/yuri_colour.jpg" />
           </div>
 
-          <div class="card">
+          <div class="section-row-reverse">
             <p>The first female in space is Valentina Tereshkova</p>
             <img
               src="./images/valentina_bw.jpg"
@@ -66,31 +66,33 @@
           </div>
         </div>
 
-        <p>
-          The average age of an astronaut on their first space mission is 40
-          years old
-        </p>
-        <div id="age-bar-chart"></div>
+        <div class="section-column" id="age-container">
+          <p>
+            The average age of an astronaut on their first space mission is 40
+            years old
+          </p>
+          <div id="age-bar-chart"></div>
+        </div>
       </div>
 
-      <div class="row second-row">
+      <div class="section-column" id="second-section">
         <h1>Where are our astronauts from?</h1>
         <div class="map-continer">
           <div id="choropleth-map"></div>
         </div>
       </div>
 
-      <div class="row third-row">
+      <div class="section-row" id="third-section">
         <h1>Who has flown the most?</h1>
         <div id="isotype-dot-plot"></div>
       </div>
 
-      <div class="row fourth-row">
+      <div class="section-row-reverse" id="fourth-section">
         <h1>Total Extravehicular Hours</h1>
         <div id="eva-hrs-bar-chart"></div>
       </div>
 
-      <div class="row fifth-row">
+      <div class="section-row" id="fifth-section">
         <h1>There are currently # people in space right now!</h1>
       </div>
 
