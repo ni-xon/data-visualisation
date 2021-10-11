@@ -8,7 +8,7 @@
   },
   "width": 1000,
   "height": 600,
-  "background": "black",
+  "background": "white",
   "config": {
     "view": {
       "stroke": "transparent"
@@ -44,12 +44,16 @@
     "color": {
       "field": "count",
       "type": "quantitative",
-      "scale": { "scheme": "darkred", "type": "symlog", "reverse": false }
+      "scale": { "scheme": "darkred", "type": "symlog", "reverse": false },
+      "title": "Number of Astronauts"
     },
-
     "tooltip": [
-      { "field": "properties.name", "type": "nominal", "title": "country" },
-      { "field": "count", "type": "quantitative" }
+      { "field": "properties.name", "type": "nominal", "title": "Country" },
+      {
+        "field": "count",
+        "type": "quantitative",
+        "title": "Number Of Astronauts"
+      }
     ]
   }
 }
