@@ -71,7 +71,8 @@
         "labelAngle": 0,
         "labelColor": "white",
         "titleColor": "white",
-        "ticks": false
+        "ticks": false,
+        "labelFontSize": 14
       }
     },
     "text": { "field": "emoji", "type": "nominal" },

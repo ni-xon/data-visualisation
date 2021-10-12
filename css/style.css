@@ -31,7 +31,7 @@ h2 {
   font-size: 36px;
 }
 
-img {
+.portraits {
   height: 200px;
   width: 200px;
   border-radius: 50%;
@@ -39,6 +39,7 @@ img {
 
 footer {
   width: 100%;
+  margin-top: 100px;
   justify-content: flex-end;
   flex: 1;
 }
@@ -92,10 +93,16 @@ p {
   margin-top: 30px;
 }
 
+#fifth-section {
+  margin-top: 30px;
+  width: 60%;
+}
+
 #first-section,
 #second-section,
 #third-section,
-#fourth-section {
+#fourth-section,
+#fifth-section {
   gap: 30px;
 }
 
@@ -123,6 +130,10 @@ p {
   width: 400px;
   height: 100%;
   gap: 30px;
+}
+
+#space-right-now {
+  font-size: 36px;
 }
 
 .demographic-paragraph {

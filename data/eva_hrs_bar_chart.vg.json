@@ -28,7 +28,10 @@
       "axis": {
         "labelAngle": 0,
         "labelColor": "white",
-        "titleColor": "white"
+        "titleColor": "white",
+        "labelFontSize": 14,
+        "titleFontSize": 16,
+        "titlePadding": 20
       }
     },
     "y": {
@@ -42,7 +45,8 @@
       "axis": {
         "labelAngle": 0,
         "labelColor": "white",
-        "titleColor": "white"
+        "titleColor": "white",
+        "labelFontSize": 14
       }
     },
     "tooltip": [
