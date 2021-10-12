@@ -45,7 +45,11 @@
       "field": "count",
       "type": "quantitative",
       "scale": { "scheme": "darkred", "type": "symlog", "reverse": false },
-      "title": "Number of Astronauts"
+      "title": "Number of Astronauts",
+      "legend": {
+        "labelColor": "white",
+        "titleColor": "white"
+      }
     },
     "tooltip": [
       { "field": "properties.name", "type": "nominal", "title": "Country" },
