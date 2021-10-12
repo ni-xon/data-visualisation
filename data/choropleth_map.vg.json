@@ -3,7 +3,7 @@
   "title": {
     "text": "Global distribution of Astronauts and their nationalilties before 2020",
     "color": "white",
-    "anchor": "end",
+    "anchor": "right",
     "orient": "top"
   },
   "width": 1000,

@@ -48,7 +48,7 @@
   },
   "transform": [
     {
-      "calculate": "{'rocket': '🚀'}[datum.emoji]",
+      "calculate": "{'rocket': '⭐'}[datum.emoji]",
       "as": "emoji"
     },
     { "window": [{ "op": "rank", "as": "rank" }], "groupby": ["name", "emoji"] }
@@ -59,12 +59,7 @@
       "field": "rank",
       "type": "ordinal",
       "title": "",
-      "axis": {
-        "labelAngle": 0,
-        "labelColor": "white",
-        "titleColor": "white",
-        "ticks": false
-      }
+      "axis": null
     },
     "y": {
       "field": "name",

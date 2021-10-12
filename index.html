@@ -32,28 +32,38 @@
     <main>
       <header><h1>Earth's Astronauts</h1></header>
       <div class="section-column" id="first-section">
-        <h1>Who are our astronauts?</h1>
+        <h2>Who Are Our astronauts?</h2>
         <div class="section-row">
           <div class="section-row">
-            <div class="paragraph-container">
-              <p>89% of astronauts are male</p>
-              <p>11% of astronauts are female</p>
+            <div id="demographic-container">
+              <p><span class="figures">89%</span> of astronauts are Male</p>
+              <p><span class="figures">11%</span> of astronauts are Female</p>
             </div>
             <div id="isotype-grid-gender"></div>
           </div>
 
           <div class="section-row">
-            <div class="paragraph-container">
-              <p>59% of astronauts are originally from the military</p>
-              <p>41% of astronauts are originally civilians</p>
+            <div id="demographic-container">
+              <p>
+                <span class="figures">59%</span> of astronauts are originally
+                from the Military
+              </p>
+              <p>
+                <span class="figures">41%</span> of astronauts are originally
+                Civilians
+              </p>
             </div>
             <div id="isotype-grid-military"></div>
           </div>
         </div>
 
         <div class="section-row" id="first-male-female-container">
-          <div class="section-row">
-            <p>The first male and person in space is Yuri Gagarin</p>
+          <div class="section-row person-container">
+            <p class="demographic-paragraph">
+              1st Male and Person in space <br /><span class="figures"
+                >Yuri Gagarin</span
+              >
+            </p>
             <a
               href="https://en.wikipedia.org/wiki/Yuri_Gagarin"
               target="_blank"
@@ -66,8 +76,11 @@
             /></a>
           </div>
 
-          <div class="section-row-reverse">
-            <p>The first female in space is Valentina Tereshkova</p>
+          <div class="section-row person-container">
+            <p class="demographic-paragraph">
+              1st Female in space <br />
+              <span class="figures">Valentina Tereshkova</span>
+            </p>
             <a
               href="https://en.wikipedia.org/wiki/Valentina_Tereshkova"
               target="_blank"
@@ -82,7 +95,8 @@
 
         <div class="section-column" id="age-container">
           <p>
-            The average age of an astronaut on their first space mission is 40
+            The Average Age of an Astronaut on Their First Space Mission is
+            <span class="figures">40</span>
             years old
           </p>
           <div id="age-bar-chart"></div>
@@ -90,29 +104,59 @@
       </div>
 
       <div class="section-column" id="second-section">
-        <h1>Where are our astronauts from?</h1>
+        <h2>Where Are Our Astronauts From?</h2>
         <div class="map-continer">
           <div id="choropleth-map"></div>
         </div>
       </div>
 
       <div class="section-row" id="third-section">
-        <h1>Who has flown the most?</h1>
+        <div class="section-column" id="flown-text-container">
+          <h2>
+            Who Has Flown <br />
+            The Most?
+          </h2>
+          <p>
+            Jerry Lynn Ross & Franklin Ramón Chang Díaz have both flown
+            <span class="figures">7</span> space shuttle missions, making them
+            both joint record holders for the most spaceflights <br />
+            in history
+          </p>
+        </div>
         <div id="isotype-dot-plot"></div>
       </div>
 
       <div class="section-row-reverse" id="fourth-section">
-        <h1>Total Extravehicular Hours</h1>
+        <div class="section-column" id="eva-text-container">
+          <h2>Total Extravehicular Hours</h2>
+
+          <div id="eva-paragraph-container">
+            <p>
+              Anatoly Solovyev holds the record with
+              <br />
+              <span class="figures">78.8</span> total EVA hours
+            </p>
+
+            <p>
+              Followed by Michael López-Alegría with <br />
+              <span class="figures">67.7</span> total EVA hours
+            </p>
+            <p>
+              Followed by Andrew J. Feustel with <br />
+              <span class="figures">61.8</span> total EVA hours
+            </p>
+          </div>
+        </div>
         <div id="eva-hrs-bar-chart"></div>
       </div>
 
       <div class="section-row" id="fifth-section">
-        <h1>There are currently # people in space right now!</h1>
+        <span>🛰 There are currently # people in space right now!</span>
       </div>
 
       <footer class="section-row">
         <p>
-          <strong>Source:</strong>
+          <strong>🚩 Source:</strong>
           <a
             href="https://github.com/rfordatascience/tidytuesday/tree/master/data/2020/2020-07-14"
             target="_blank"
