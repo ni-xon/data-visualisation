@@ -152,6 +152,10 @@ p {
   font-size: 28px;
 }
 
+.orange-highlight {
+  color: #ff6a00;
+}
+
 /* Starry Background */
 .background-container {
   position: fixed;
