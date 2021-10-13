@@ -40,20 +40,3 @@ vegaEmbed("#eva-hrs-bar-chart", spec7)
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   })
   .catch(console.error);
-
-// Image hovers
-function hover_yuri(element) {
-  element.setAttribute("src", "./images/yuri_colour.jpg");
-}
-
-function unhover_yuri(element) {
-  element.setAttribute("src", "./images/yuri_bw.jpg");
-}
-
-function hover_val(element) {
-  element.setAttribute("src", "./images/valentina_colour.jpg");
-}
-
-function unhover_val(element) {
-  element.setAttribute("src", "./images/valentina_bw.jpg");
-}

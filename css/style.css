@@ -159,6 +159,19 @@ p {
   gap: 20px;
 }
 
+/* Portrait hover animation effect */
+.portraits {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.portraits:hover {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
 .figures {
   font-size: 28px;
 }
@@ -167,8 +180,8 @@ p {
   color: #ff6a00;
 }
 
-#iss:hover {
-  animation: MoveUpDown 2s linear infinite;
+#iss {
+  animation: MoveUpDown 5s linear infinite;
 }
 
 /* Starry Background */

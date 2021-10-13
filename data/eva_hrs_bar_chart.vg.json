@@ -16,7 +16,6 @@
   ],
   "mark": {
     "type": "bar",
-    "fill": "white",
     "stroke": "black",
     "cursor": "pointer"
   },
@@ -49,6 +48,7 @@
         "labelFontSize": 14
       }
     },
+    "color": { "field": "eva_colour", "type": "nominal", "scale": null },
     "tooltip": [
       {
         "field": "total_eva_hrs",

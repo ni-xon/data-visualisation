@@ -16,7 +16,6 @@
   ],
   "mark": {
     "type": "bar",
-    "fill": "white",
     "stroke": "black",
     "cursor": "pointer"
   },
@@ -47,6 +46,7 @@
         "titlePadding": 20
       }
     },
+    "color": { "field": "age_colour", "type": "nominal", "scale": null },
     "tooltip": [
       {
         "aggregate": "count",
