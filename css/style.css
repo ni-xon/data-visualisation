@@ -40,7 +40,7 @@ h2 {
 footer {
   width: 100%;
   margin-top: 100px;
-  justify-content: flex-end;
+  justify-content: space-between;
   flex: 1;
 }
 
@@ -157,6 +157,17 @@ p {
 #age-container {
   align-items: center;
   gap: 20px;
+}
+
+.flags {
+  margin-top: 5px;
+  height: 20px;
+  width: auto;
+}
+
+.person-flag {
+  align-items: center;
+  gap: 10px;
 }
 
 /* Portrait hover animation effect */
