@@ -6,12 +6,13 @@
 
 main {
   min-height: 100%;
-  min-width: 100%;
+  min-width: 80%;
   padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 30px;
+  justify-content: center;
+  gap: 80px;
   font-family: "Lato";
   background-color: var(--bg-color);
   color: var(--text-color);
@@ -37,6 +38,10 @@ h2 {
   border-radius: 50%;
 }
 
+header {
+  margin-top: 30px;
+}
+
 footer {
   width: 100%;
   margin-top: 100px;
@@ -54,8 +59,9 @@ p {
 }
 
 /* VISUALISATIONS */
-#choropleth_map {
-  margin: 10px;
+.map-container {
+  z-index: -1;
+  margin-bottom: -80px;
 }
 
 #isotype-grid-gender,
@@ -89,12 +95,13 @@ p {
   align-items: center;
 }
 
-#fourth-section {
+#fourth-section,
+#third-section,
+#fifth-section {
   margin-top: 30px;
 }
 
 #fifth-section {
-  margin-top: 30px;
   width: 60%;
 }
 
@@ -159,6 +166,20 @@ p {
   gap: 20px;
 }
 
+#age-bar-chart {
+  margin-right: 15px;
+}
+
+#demographic-text-container {
+  width: 100%;
+  gap: 80px;
+  margin-left: 50px;
+}
+
+.paragraph-container {
+  flex: 1;
+}
+
 .flags {
   margin-top: 5px;
   height: 20px;
@@ -189,6 +210,14 @@ p {
 
 .orange-highlight {
   color: #ff6a00;
+}
+
+.yellow-highlight {
+  color: rgb(243, 243, 45);
+}
+
+.bigger-font {
+  font-size: 44px;
 }
 
 #iss {
