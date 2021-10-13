@@ -167,6 +167,10 @@ p {
   color: #ff6a00;
 }
 
+#iss:hover {
+  animation: MoveUpDown 2s linear infinite;
+}
+
 /* Starry Background */
 .background-container {
   position: fixed;
@@ -243,3 +247,14 @@ p {
   }
 }
 /* End Starry Background */
+
+/* Animation for ISS image */
+@keyframes MoveUpDown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
