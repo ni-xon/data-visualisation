@@ -5,7 +5,7 @@
   "height": 400,
   "background": "black",
   "data": {
-    "url": "data-cleaning/top10_eva_hrs.csv"
+    "url": "https://raw.githubusercontent.com/ni-xon/data-visualisation/master/data/datasets/top10_eva_hrs.csv"
   },
   "params": [
     {

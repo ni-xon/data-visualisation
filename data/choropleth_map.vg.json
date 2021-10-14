@@ -27,7 +27,7 @@
       "lookup": "properties.name",
       "from": {
         "data": {
-          "url": "https://raw.githubusercontent.com/ni-xon/data-visualisation/master/data-cleaning/nationalities.csv"
+          "url": "https://raw.githubusercontent.com/ni-xon/data-visualisation/master/data/datasets/nationalities.csv"
         },
         "key": "country",
         "fields": ["count"]
