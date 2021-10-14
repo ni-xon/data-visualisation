@@ -4,23 +4,29 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Lato";
+  color: var(--text-color);
+  position: relative;
+}
+
 main {
-  min-height: 100%;
-  min-width: 80%;
-  padding: 20px;
+  padding-left: 10%;
+  padding-right: 10%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 70px;
-  font-family: "Lato";
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  z-index: 4;
+  gap: 80px;
 }
 
 main > * {
   z-index: 3;
+}
+
+header {
+  justify-content: center;
+  margin: 30px;
 }
 
 h1 {
@@ -32,21 +38,18 @@ h2 {
   font-size: 36px;
 }
 
-.portraits {
-  height: 200px;
-  width: 200px;
-  border-radius: 50%;
-}
-
-header {
-  margin-top: 30px;
-}
-
 footer {
   width: 100%;
-  margin-top: 100px;
+  padding: 20px;
   justify-content: space-between;
   flex: 1;
+}
+
+header,
+main,
+footer {
+  position: relative;
+  z-index: 4;
 }
 
 p {
@@ -58,30 +61,18 @@ p {
   --text-color: white;
 }
 
-/* VISUALISATIONS */
-.map-container {
-  z-index: -1;
-  margin-bottom: -80px;
-}
-
-#isotype-grid-gender,
-#isotype-grid-military {
-  padding-right: 30px;
-}
-/* END VISUALISATIONS */
-
 /* FLEX CONTAINERS */
-.section-row {
+.flex-row {
   display: flex;
   flex-direction: row;
 }
 
-.section-column {
+.flex-column {
   display: flex;
   flex-direction: column;
 }
 
-.section-row-reverse {
+.flex-row-reverse {
   display: flex;
   flex-direction: row-reverse;
 }
@@ -95,14 +86,8 @@ p {
   align-items: center;
 }
 
-#fourth-section,
-#third-section,
 #fifth-section {
-  margin-top: 30px;
-}
-
-#fifth-section {
-  width: 60%;
+  margin-bottom: 60px;
 }
 
 #first-section,
@@ -112,6 +97,22 @@ p {
 #fifth-section {
   gap: 30px;
 }
+
+/* VISUALISATIONS */
+.map-container {
+  z-index: -1;
+  margin-bottom: -80px;
+}
+
+#isotype-grid-gender,
+#isotype-grid-military {
+  padding-right: 30px;
+}
+
+#age-bar-chart {
+  margin-right: 15px;
+}
+/* END VISUALISATIONS */
 
 #isotype-overall-container {
   margin-left: 30px;
@@ -145,6 +146,7 @@ p {
 
 #space-right-now {
   font-size: 36px;
+  text-align: center;
 }
 
 .demographic-paragraph {
@@ -168,10 +170,6 @@ p {
 #age-container {
   align-items: center;
   gap: 20px;
-}
-
-#age-bar-chart {
-  margin-right: 15px;
 }
 
 #demographic-text-container {
@@ -208,6 +206,7 @@ p {
   filter: grayscale(100%);
 }
 
+/* Typographic highlight styles */
 .figures {
   font-size: 28px;
 }
@@ -223,10 +222,21 @@ p {
 .bigger-font {
   font-size: 44px;
 }
+/* End Typographic highlight styles */
 
+/* Image Styles */
 #iss {
+  width: 60%;
+  height: auto;
   animation: MoveUpDown 5s linear infinite;
 }
+
+.portraits {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+/* End Image Styles */
 
 /* Starry Background */
 .background-container {
@@ -246,7 +256,6 @@ p {
   left: 0;
   right: 0;
   display: block;
-  z-index: 0;
 }
 
 .twinkling {
@@ -260,7 +269,6 @@ p {
   right: 0;
   top: 0;
   bottom: 0;
-  z-index: 2;
 
   -moz-animation: move-background 70s linear infinite;
   -ms-animation: move-background 70s linear infinite;
